@@ -1,0 +1,25 @@
+:root {
+  --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
+    'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
+    'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
+
+    --main-website-color: #00c6bd;
+    --main-website-hover-color: #25f3e9;
+    --main-background-color: linear-gradient(130deg,#2a2d35,#2f323b 60%,#464b58 80%);
+}
+
+html,
+body {
+  margin: 0px;
+  max-width: 100vw;
+  overflow-x: hidden;
+  background: var(--main-background-color);
+  min-height: 100vh;
+}
+
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+

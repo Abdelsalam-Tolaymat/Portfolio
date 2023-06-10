@@ -1,0 +1,23 @@
+.header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4rem;
+    border-bottom: 1px solid var(--main-website-color);
+    gap: 20px;
+}
+
+.header-element{
+    color: var(--main-website-color);
+}
+
+.header-element:hover{
+    color: var( --main-website-hover-color);
+    text-decoration: underline;
+}
+
+.header-element-active{
+    color: var( --main-website-hover-color);
+    text-decoration: underline;
+}
