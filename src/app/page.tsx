@@ -3,6 +3,6 @@ import styles from '../styles/page.module.css'
 
 export default function Page() {
   return (
-    <h1>Hello, Next.js!</h1>
+    <h1>Hello, Next.js! Now on Vercel</h1>
   )
 }
