@@ -1,14 +1,41 @@
 .card{
     width: 20%;
-    height: 35rem;
-    position: relative;
+    height: 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid 1px #474749;
+    justify-content: space-around;
+    padding: 10px;
+    box-sizing: border-box;
 }
 
-.card-title{
-
+.card[data-isHovered="true"]{
+    height: 17rem;
+    border-width: 10px;
+    border-radius: 10px;
+}
+.card:hover[data-title='Anime Getter']{
+    border-color: blueviolet;
+}
+.card:hover[data-title='PatchMe']{
+    border-color: #25f3e9;
+}
+.card:hover[data-title='CheckMyWeather']{
+    border-color: rgb(219, 94, 94);
 }
 
-.card-image{
+.card-title[data-title='Anime Getter'][data-isHovered="true"]{
+    color : blueviolet;
+}
+.card-title[data-title='PatchMe'][data-isHovered="true"]{
+    color : #25f3e9;
+}
+.card-title[data-title='CheckMyWeather'][data-isHovered="true"]{
+    color : rgb(219, 94, 94);
+}
+
+.description{
 
 
 }

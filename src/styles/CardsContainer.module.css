@@ -2,5 +2,7 @@
     display: flex;
     width: 100%;
     justify-content: space-around;
-    padding-top: 125px;
+    margin-top: 125px;
+    min-height: 20rem;
+    align-items: center;
 }
