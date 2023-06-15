@@ -20,8 +20,8 @@ export default function Card({title, description, image, changeSidebar}:CardProp
 
     return (
         <>
-            <motion.div transition={{duration:0.2}} layout data-title={title} data-isHovered={isHovered} onClick={() => changeSidebar(true)} onMouseEnter={handleHover} onMouseLeave={handleHover} className={styles['card']}>
-                <span data-title={title} data-isHovered={isHovered} className={styles['card-title']}>{title}</span>
+            <motion.div transition={{duration:0.2}} layout data-title={title} data-ishovered={isHovered} onClick={() => changeSidebar(true)} onMouseEnter={handleHover} onMouseLeave={handleHover} className={styles['card']}>
+                <span data-title={title} data-ishovered={isHovered} className={styles['card-title']}>{title}</span>
                 {isHovered ? <span className={styles['description']}>{description}</span> : null}
             </motion.div>
         </>

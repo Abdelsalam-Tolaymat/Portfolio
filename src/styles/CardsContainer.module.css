@@ -6,3 +6,9 @@
     min-height: 20rem;
     align-items: center;
 }
+
+.sidebar-container{
+    position: absolute;
+    top: 4rem;
+    left: -20rem;
+}

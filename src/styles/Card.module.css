@@ -10,7 +10,7 @@
     box-sizing: border-box;
 }
 
-.card[data-isHovered="true"]{
+.card[data-ishovered="true"]{
     height: 17rem;
     border-width: 10px;
     border-radius: 10px;
@@ -25,13 +25,13 @@
     border-color: rgb(219, 94, 94);
 }
 
-.card-title[data-title='Anime Getter'][data-isHovered="true"]{
+.card-title[data-title='Anime Getter'][data-ishovered="true"]{
     color : blueviolet;
 }
-.card-title[data-title='PatchMe'][data-isHovered="true"]{
+.card-title[data-title='PatchMe'][data-ishovered="true"]{
     color : #25f3e9;
 }
-.card-title[data-title='CheckMyWeather'][data-isHovered="true"]{
+.card-title[data-title='CheckMyWeather'][data-ishovered="true"]{
     color : rgb(219, 94, 94);
 }
 
