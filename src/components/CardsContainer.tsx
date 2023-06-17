@@ -9,10 +9,6 @@ import { useState } from 'react'
 
 export default function CardsContainer() {
     const [isSidebar, setIsSidebar] = useState(false)
-    const [modalOpen, setModalOpen] = useState(false);
-
-    const close = () => setModalOpen(false);
-    const open = () => setModalOpen(true);
 
     return (
         <>  

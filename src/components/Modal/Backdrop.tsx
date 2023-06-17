@@ -1,6 +1,6 @@
 import { MouseEvent, ReactNode } from "react";
 import { ForwardRefComponent, HTMLMotionProps, motion } from "framer-motion";
-import styles from '../styles/Backdrop.module.css'
+import styles from '../../styles/Backdrop.module.css'
 
 interface Backdrop {children:ReactNode, onClick(e:MouseEvent<HTMLDivElement>):void}
 const Backdrop = ({ children, onClick }:Backdrop) => {
