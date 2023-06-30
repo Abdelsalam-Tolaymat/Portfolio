@@ -1,8 +1,10 @@
 import { createSlice } from "@reduxjs/toolkit";
 
+interface ModalInterface {modal:{isOpen:boolean, modalPageName:string}}
+
 const modalSlice = createSlice({
     name: 'modal',
-    initialState: {modal:{isOpen:false, modalPageName:''}},
+    initialState: {modal:{isOpen:false, modalPageName:''}} as ModalInterface,
     reducers: 
         {
             changeModalPageName:(state, action)=>{

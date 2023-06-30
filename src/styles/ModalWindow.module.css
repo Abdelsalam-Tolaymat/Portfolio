@@ -4,14 +4,13 @@
     padding: 0 3rem;
     min-height: 3rem;
     margin: auto auto 0 auto;
-    background: var(--dark);
-    color: var(--light);
   }
 
 .modal {
-width: clamp(50%, 700px, 90%);
-height: min(50%, 300px);
-
+width: clamp(65%, 1300px, 90%);
+height: min(60%, 700px);
+border: 1px solid black;
+box-sizing: border-box;
 margin: auto;
 padding: 0 2rem;
 border-radius: 12px;

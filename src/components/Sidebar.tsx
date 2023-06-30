@@ -12,9 +12,9 @@ export default function Sidebar({}) {
     return (
         <>  
            <div className={styles['sidebar']}>
-                <div onClick={()=> dispatch(changeEverything({isOpen: true, modalPageName: 'AnimeGetter'}))} style={{backgroundColor:'blueviolet'}} className={styles['sidebar-element']}>Anime Getter</div>
-                <div onClick={()=> dispatch(changeEverything({isOpen: true, modalPageName: 'AnimeGetter'}))} style={{backgroundColor:'#00c6bd'}} className={styles['sidebar-element']}>PatchMe</div>
-                <div onClick={()=> dispatch(changeEverything({isOpen: true, modalPageName: 'AnimeGetter'}))} style={{backgroundColor:'rgb(219, 94, 94)'}} className={styles['sidebar-element']}>CheckMyWeather</div>
+                <div onClick={()=> dispatch(changeEverything({isOpen: true, modalPageName: 'Anime Getter'}))} style={{backgroundColor:'blueviolet'}} className={styles['sidebar-element']}>Anime Getter</div>
+                <div onClick={()=> dispatch(changeEverything({isOpen: true, modalPageName: 'PatchMe'}))} style={{backgroundColor:'#00c6bd'}} className={styles['sidebar-element']}>PatchMe</div>
+                <div onClick={()=> dispatch(changeEverything({isOpen: true, modalPageName: 'CheckMyWeather'}))} style={{backgroundColor:'rgb(219, 94, 94)'}} className={styles['sidebar-element']}>CheckMyWeather</div>
            </div>
         </>
 
