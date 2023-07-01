@@ -1,14 +1,22 @@
 'use client'
 
 import styles from '../../styles/PatchMeCard.module.css'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { useDispatch } from 'react-redux'
 import Image from 'next/image'
-
+import setColors from '@/composables/ThemeSelector'
 
 export default function PatchMeCard({}) {
 
     const [activeGif, setActiveGif] = useState('dark')
+
+    useEffect(()=>{
+       if(activeGif == 'dark'){
+        setColors('PatchMeDark')
+       }else if(activeGif == 'purple'){
+        setColors('PatchMePurple')
+       }
+    },[activeGif])
 
     return (
         <> 
@@ -32,7 +40,7 @@ export default function PatchMeCard({}) {
                 />
             </div>
             <div className={styles['card-description']}>
-                <span style={{color:'var(--main-website-color)'}} >PatchMe</span>
+                <span style={{color:'var(--main-website-color)', transition: 'color 0.3s'}} >PatchMe</span>
                 <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis voluptatibus doloribus nihil minima reprehenderit nostrum a perferendis obcaecati ducimus rerum minus consequuntur, suscipit sunt maxime esse ratione eveniet ipsa atque.</span>
                 <span>Technologies used: <ul><li>Vue.js</li><li>Python</li><li>Node.js</li><li>Web Scraping (BS4, Puppeteer)</li><li>Overwolf</li></ul></span>
             </div>

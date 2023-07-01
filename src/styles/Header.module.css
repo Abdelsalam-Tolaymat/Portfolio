@@ -10,11 +10,13 @@
 
 .header-element{
     color: var(--main-website-color);
+    transition: color 0.3s;
 }
 
 .header-element:hover{
     color: var( --main-website-hover-color);
     text-decoration: underline;
+    transition: color 0.3s;
 }
 
 .header-element-active{

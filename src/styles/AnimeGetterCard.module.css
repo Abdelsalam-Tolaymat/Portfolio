@@ -6,17 +6,9 @@
     box-sizing: border-box;
 }
 
-.anime-getter-container{
-    padding-top: 130px;
-}
-
 .gifs-container{
     position: relative;
     width: 35%;
-}
-
-.anime-getter-gifs-container{
-    width: 50%;
 }
 
 .gif{
@@ -49,9 +41,5 @@
     display: flex;
     flex-direction: column;
     gap: 15px;
-}
-
-.anime-getter-card-description{
-    width: 50%;
 }
 

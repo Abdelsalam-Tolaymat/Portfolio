@@ -8,6 +8,9 @@ import { useDispatch, useSelector } from "react-redux";
 import { changeIsOpen } from "@/store/modalSlice";
 import { RootState } from "@/store";
 import PatchMeCard from "../Project Cards/PatchMeCard"
+import AnimeGetterCard from "../Project Cards/AnimeGetterCard"
+import CheckMyWeatherCard from "../Project Cards/CheckMyWeatherCard";
+
 
 
 const dropIn = {
@@ -41,15 +44,12 @@ const Modal = () => {
   const RenderedPage = ()=>{
     if (pageName == "PatchMe"){
       return <PatchMeCard/>
-    } // else if(pageName == "Anime Getter"){
-    //   return <PatchMeCard/>
-    // } else if(pageName == "CheckMyWeather"){
-    //   return <CheckMyWeatherCard/>
-    // } else{
-    //   return <></>
-    // }
+    } else if(pageName == "Anime Getter"){
+      return <AnimeGetterCard/>
+    } else if(pageName == "CheckMyWeather"){ 
+      return <CheckMyWeatherCard/>
+    }
   }
-
   useEffect(()=>{console.log('opened modal window')}, [pageName])
   return (
     <Backdrop onClick={() => dispatch(changeIsOpen(false))}>
