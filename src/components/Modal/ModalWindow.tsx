@@ -23,7 +23,7 @@ const dropIn = {
     opacity: 1,
     transition: {
       delay: 0.3,
-      duration: 0.1,
+      duration: 0.5,
       type: "spring",
       damping: 25,
       stiffness: 500,
