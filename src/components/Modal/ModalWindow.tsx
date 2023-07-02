@@ -22,6 +22,7 @@ const dropIn = {
     y: "0",
     opacity: 1,
     transition: {
+      delay: 0.3,
       duration: 0.1,
       type: "spring",
       damping: 25,
@@ -30,7 +31,7 @@ const dropIn = {
   },
   exit: {
     y: "100vh",
-    opacity: 0,
+    opacity: 1,
   },
 };
 

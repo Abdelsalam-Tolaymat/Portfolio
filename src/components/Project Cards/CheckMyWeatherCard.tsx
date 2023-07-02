@@ -24,7 +24,7 @@ export default function CheckMyWeatherCard({}) {
                 />
             </div>
             <div className={styles['card-description'] + ' ' + styles['anime-getter-card-description']}>
-                <span style={{color:'var(--main-website-color)'}} >PatchMe</span>
+                <span className={styles['card-title']} >PatchMe</span>
                 <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis voluptatibus doloribus nihil minima reprehenderit nostrum a perferendis obcaecati ducimus rerum minus consequuntur, suscipit sunt maxime esse ratione eveniet ipsa atque.</span>
                 <span>Technologies used: <ul><li>Vue.js</li><li>Python</li><li>Node.js</li><li>Web Scraping (BS4, Puppeteer)</li><li>Overwolf</li></ul></span>
             </div>

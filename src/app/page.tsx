@@ -12,7 +12,7 @@ import { useEffect } from 'react'
 export default function Page() {
   const modalOpen = useSelector<RootState>(state=>state.modal.modal.isOpen);
 
-  useEffect(()=>{console.log(modalOpen)},[modalOpen])
+  // useEffect(()=>{console.log(modalOpen)},[modalOpen])
   return (
     <>
       {modalOpen ? <Modal/> : null}
