@@ -7,7 +7,7 @@
 }
 
 .anime-getter-container{
-    padding-top: 130px;
+    padding-top: 95px;
 }
 
 .gifs-container{
@@ -35,6 +35,7 @@
 
 .active-gif:hover{
     transform: translateY(-10px);
+    cursor: pointer;
 }
 
 .inactive-gif{
@@ -44,6 +45,7 @@
 
 .inactive-gif:hover{
     transform: translateY(-5px) translate(30px) rotate(8deg);
+    cursor: pointer;
 }
 
 .card-description{
@@ -53,9 +55,12 @@
     gap: 15px;
 }
 
+
+
 .reference-link{
     color: var(--main-website-color);
     text-decoration: underline;
+    transition: color 0.3s;
 }
 
 .card-title{

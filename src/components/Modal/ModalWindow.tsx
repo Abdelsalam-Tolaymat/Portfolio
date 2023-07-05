@@ -63,7 +63,7 @@ const Modal = () => {
           exit="exit"
       >
         <RenderedPage/>
-        <ModalButton onClick={() => dispatch(changeIsOpen(false))} label="Close" /> 
+        {/* <ModalButton onClick={() => dispatch(changeIsOpen(false))} label="Close" />  */}
       </motion.div>    
     </Backdrop>
   );

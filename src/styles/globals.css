@@ -20,6 +20,9 @@ body {
   transition: background 0.3s, color 0.3s;
 }
 
+::selection{
+  background: var(--main-website-color);
+}
 
 a {
   color: inherit;

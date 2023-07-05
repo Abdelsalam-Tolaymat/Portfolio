@@ -11,6 +11,8 @@ export default function CheckMyWeatherCard({}) {
         setColors('CheckMyWeather')
     },[])
 
+    const descriptionText = ()=> {return <span>A simple weather forecast website developed with Vue.js using information provided by <a className={styles['reference-link']} href="https://www.weatherapi.com/">WeatherAPI</a>. The webiste has a search functionality to choose the location and has 3 pages for current weather, daily weather (for the next 3 days), and hourly weather. The user can switch between light and dark themes as well as choose the unit system the information will be shown in (metric/imperial).<br/><br/> You can check out the website <a className={styles['reference-link']} href="https://check-my-weather.vercel.app/">here</a>.</span>}
+
     return (
         <> 
         <div className={styles['container'] + ' ' + styles['anime-getter-container']}>
@@ -26,7 +28,7 @@ export default function CheckMyWeatherCard({}) {
             </div>
             <div className={styles['card-description'] + ' ' + styles['anime-getter-card-description']}>
                 <span className={styles['card-title']} >CheckMyWeather</span>
-                <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis voluptatibus doloribus nihil minima reprehenderit nostrum a perferendis obcaecati ducimus rerum minus consequuntur, suscipit sunt maxime esse ratione eveniet ipsa atque.</span>
+                {descriptionText()}
                 <span>Technologies used: <ul><li>Vue.js</li><li>Python</li><li>Node.js</li><li>Web Scraping (BS4, Puppeteer)</li><li>Overwolf</li></ul></span>
             </div>
         </div> 

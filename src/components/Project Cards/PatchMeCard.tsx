@@ -18,6 +18,8 @@ export default function PatchMeCard({}) {
        }
     },[activeGif])
 
+    const descriptionText = ()=> {return <span>A desktop app developed and published on the Overwolf platform. PatchMe supports players of the popular online video game "League of Legends" by providing them with accurate up-to-date information concerning any and all changes in the game. The app was recently released on the Overwolf store and currently boasts over 2k downloads. You can find it through this <a className={styles['reference-link']} href="https://www.overwolf.com/app/BmElectro_and_A3ead-PatchMe">link</a><br/><br/> Click <a className={styles['reference-link']} href="https://dev.to/abdelsalam_tolaymat/overview-of-overwolf-app-patchme-21jf">here</a>  for a technical and in-depth look at the app.</span>}
+
     return (
         <> 
         <div className={styles['container']}>
@@ -41,7 +43,7 @@ export default function PatchMeCard({}) {
             </div>
             <div className={styles['card-description']}>
                 <span className={styles['card-title']} >PatchMe</span>
-                <span>A desktop app developed and published on the Overwolf platform. PatchMe supports players of the popular online video game "League of Legends" by providing them with accurate up-to-date information regarding any and all changes in the game. The app was recently released on the Overwolf store and currently boasts over 2k downloads.<br/><br/> Click <a className={styles['reference-link']} href="https://dev.to/abdelsalam_tolaymat/overview-of-overwolf-app-patchme-21jf">here</a>  for a technical and in-depth look at the app.</span>
+                {descriptionText()}
                 <span>Technologies used: <ul><li>Vue.js</li><li>Python</li><li>Node.js</li><li>Web Scraping (BS4, Puppeteer)</li><li>Overwolf</li></ul></span>
             </div>
         </div> 
