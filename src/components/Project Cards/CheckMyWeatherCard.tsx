@@ -16,6 +16,7 @@ export default function CheckMyWeatherCard({}) {
         <div className={styles['container'] + ' ' + styles['anime-getter-container']}>
             <div className={styles['gifs-container'] + ' ' + styles['anime-getter-gifs-container']}>
                 <Image
+                    style={{boxShadow: '0px 0px 10px 1px #2c3e508a'}}
                     className= {styles['gif'] }
                     src="/CheckMyWeather Light2.png"
                     width={571}
@@ -24,7 +25,7 @@ export default function CheckMyWeatherCard({}) {
                 />
             </div>
             <div className={styles['card-description'] + ' ' + styles['anime-getter-card-description']}>
-                <span className={styles['card-title']} >PatchMe</span>
+                <span className={styles['card-title']} >CheckMyWeather</span>
                 <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis voluptatibus doloribus nihil minima reprehenderit nostrum a perferendis obcaecati ducimus rerum minus consequuntur, suscipit sunt maxime esse ratione eveniet ipsa atque.</span>
                 <span>Technologies used: <ul><li>Vue.js</li><li>Python</li><li>Node.js</li><li>Web Scraping (BS4, Puppeteer)</li><li>Overwolf</li></ul></span>
             </div>

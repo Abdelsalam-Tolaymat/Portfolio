@@ -24,7 +24,9 @@
     transition: transform 0.3s;
     top: 0px;
     left: 0px;
+    box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.3)
 }
+
 
 
 .active-gif{
@@ -49,6 +51,11 @@
     display: flex;
     flex-direction: column;
     gap: 15px;
+}
+
+.reference-link{
+    color: var(--main-website-color);
+    text-decoration: underline;
 }
 
 .card-title{
