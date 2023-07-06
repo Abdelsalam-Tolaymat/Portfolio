@@ -28,16 +28,16 @@ export default function PatchMeCard({}) {
                     className= {styles['gif'] + ' ' + (activeGif == 'dark' ? styles['active-gif'] : styles['inactive-gif'])}
                     onClick={()=> setActiveGif('dark')}
                     src="/PatchMe Dark.png"
-                    width={313}
-                    height={450}
+                    width={400}
+                    height={600}
                     alt="Picture of PatchMe in dark mode"
                 />
                 <Image
                     className= {styles['gif'] + ' ' + (activeGif == 'purple' ? styles['active-gif'] : styles['inactive-gif'])}
                     onClick={()=> setActiveGif('purple')}
                     src="/PatchMe Purple.png"
-                    width={313}
-                    height={450}
+                    width={400}
+                    height={600}
                     alt="Picture of PatchMe in default theme"
                 />
             </div>

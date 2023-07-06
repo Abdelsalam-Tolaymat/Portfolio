@@ -15,16 +15,25 @@ export default function CardsContainer() {
     const [width, height] = useWindowResize()
     const [initialLoad, setInitialLoad] = useState(true)
 
+
     useEffect(()=>{
-        if(width <= 500 && !initialLoad){
+        let loadedMobile = JSON.parse(localStorage.getItem('loadedMobile') || '')
+
+        if(width <= 650 && !loadedMobile && !initialLoad){
+            //console.log(loadedMobile)
             window.location.reload()
-            
+            localStorage.setItem('loadedMobile', JSON.stringify(true))
         }
-        console.log(initialLoad)
+        if(width > 650 && loadedMobile && !initialLoad){
+            localStorage.setItem('loadedMobile', JSON.stringify(false))
+
+        }
+
+        //console.log(initialLoad)
         setInitialLoad(false)
     },[width, height])
 
-    const motionDiv = (width <= 500 ? 
+    const motionDiv = (width <= 650 ? 
         <motion.div className={styles['sidebar-container-mobile']} layout key={'sidebar'} transition={{duration:0.5}} initial={{ bottom:  '-5rem' }}  animate={{ bottom:  '0rem' }} exit={{ bottom : '-5rem' }}>
             <Sidebar className={'sidebar-mobile'} />
         </motion.div > : 

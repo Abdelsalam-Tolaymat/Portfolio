@@ -22,9 +22,8 @@ export default function AnimeGetterCard({}) {
                 <Image
                     className= {styles['gif'] }
                     src="/AnimeGetter Dark.png"
-                    fill={true}
-                    // width={571}
-                    // height={280}
+                    width={1920}
+                    height={940}
                     alt="Picture of Anime Getter in dark mode"
                 />
             </div>

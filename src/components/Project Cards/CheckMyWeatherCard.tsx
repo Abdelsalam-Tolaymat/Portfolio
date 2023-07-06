@@ -18,11 +18,11 @@ export default function CheckMyWeatherCard({}) {
         <div className={styles['container'] + ' ' + styles['anime-getter-container']}>
             <div className={styles['gifs-container'] + ' ' + styles['anime-getter-gifs-container']}>
                 <Image
-                    style={{boxShadow: '0px 0px 10px 1px #2c3e508a'}}
+                    style={{filter: 'drop-shadow(0px 0px 5px #2c3e508a)' }} //boxShadow: '0px 0px 10px 1px #2c3e508a'
                     className= {styles['gif'] }
                     src="/CheckMyWeather Light2.png"
-                    width={571}
-                    height={280}
+                    width={1920}
+                    height={940}
                     alt="Picture of Anime Getter in dark mode"
                 />
             </div>
