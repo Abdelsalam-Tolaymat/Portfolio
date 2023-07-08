@@ -29,7 +29,12 @@ export default function CheckMyWeatherCard({}) {
             <div className={styles['card-description'] + ' ' + styles['anime-getter-card-description']}>
                 <span className={styles['card-title']} >CheckMyWeather</span>
                 {descriptionText()}
-                <span>Technologies used: <ul><li>Vue.js</li><li>Python</li><li>Node.js</li><li>Web Scraping (BS4, Puppeteer)</li><li>Overwolf</li></ul></span>
+                <span>Technologies used: 
+                    <ul>
+                        <li><a className={styles['reference-link']} href="https://vuejs.org/">Vue.js</a></li>
+                        <li><a className={styles['reference-link']} href="https://www.weatherapi.com/">WeatherAPI</a></li>
+                    </ul>
+                </span>
             </div>
         </div> 
         </>

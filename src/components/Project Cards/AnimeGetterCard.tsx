@@ -30,7 +30,14 @@ export default function AnimeGetterCard({}) {
             <div className={styles['card-description'] + ' ' + styles['anime-getter-card-description']}>
                 <span className={styles['card-title']} >Anime Getter</span>
                 {descriptionText()}
-                <span>Technologies used: <ul><li>Vue.js</li><li>Python</li><li>Node.js</li><li>Web Scraping (BS4, Puppeteer)</li><li>Overwolf</li></ul></span>
+                <span>Technologies used: 
+                    <ul>
+                        <li><a className={styles['reference-link']} href="https://vuejs.org/">Vue.js</a></li>
+                        <li><a className={styles['reference-link']} href="https://nodejs.org/en">Node.js</a></li>
+                        <li><a className={styles['reference-link']} href="https://firebase.google.com/">Firebase</a></li>
+                        <li><a className={styles['reference-link']} href="https://jikan.moe/">Jikan API</a></li>
+                    </ul>
+                </span>
             </div>
         </div> 
         </>

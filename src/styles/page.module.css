@@ -1,0 +1,27 @@
+.footer-container{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer{
+    border: solid 2px var(--main-website-color);
+    padding: 5rem;
+    border-radius: 5px;
+}
+
+
+.reference-link{
+    color: var(--main-website-color);
+    text-decoration: underline;
+    transition: color 0.3s;
+}
+
+@media  screen and (max-width: 650px){
+    .footer{
+        padding: 2rem;
+        border: none;
+        border-top: solid 2px var(--main-website-color) ;
+    }
+}

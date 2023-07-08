@@ -44,7 +44,16 @@ export default function PatchMeCard({}) {
             <div className={styles['card-description']}>
                 <span className={styles['card-title']} >PatchMe</span>
                 {descriptionText()}
-                <span>Technologies used: <ul><li>Vue.js</li><li>Python</li><li>Node.js</li><li>Web Scraping (BS4, Puppeteer)</li><li>Overwolf</li></ul></span>
+                <span>Technologies used: 
+                    <ul>
+                        <li><a className={styles['reference-link']} href="https://vuejs.org/">Vue.js</a></li>
+                        <li><a className={styles['reference-link']} href="https://nodejs.org/en">Node.js</a></li>
+                        <li><a className={styles['reference-link']} href="https://www.python.org/">Python</a></li>
+                        <li>Web Scraping (<a className={styles['reference-link']} href="https://www.crummy.com/software/BeautifulSoup/">BS4</a>, <a className={styles['reference-link']} href="https://pptr.dev/">Puppeteer</a>)</li>
+                        <li><a className={styles['reference-link']} href="https://www.overwolf.com/">Overwolf</a></li>
+                        <li><a className={styles['reference-link']} href="https://developer.riotgames.com/docs/lol">League of Legends Dev Tools</a></li>
+                    </ul>
+                </span>
             </div>
         </div> 
 

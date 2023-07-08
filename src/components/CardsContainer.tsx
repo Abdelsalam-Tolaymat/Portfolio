@@ -17,7 +17,7 @@ export default function CardsContainer() {
 
 
     useEffect(()=>{
-        let loadedMobile = JSON.parse(localStorage.getItem('loadedMobile') || '')
+        let loadedMobile = JSON.parse(localStorage.getItem('loadedMobile') || '{}')
 
         if(width <= 650 && !loadedMobile && !initialLoad){
             //console.log(loadedMobile)
