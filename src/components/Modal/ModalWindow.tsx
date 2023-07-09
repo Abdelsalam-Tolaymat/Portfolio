@@ -36,7 +36,7 @@ const dropIn = {
 };
 
 
-interface ModalButton {onClick(e:MouseEvent<HTMLButtonElement>):void, label:string}
+interface ModalButton {onClick(e:MouseEvent<HTMLButtonElement>):void}
 
 const Modal = () => {
   // Log state
@@ -62,8 +62,8 @@ const Modal = () => {
           animate="visible"
           exit="exit"
       >
+        <ModalButton onClick={() => dispatch(changeIsOpen(false))}/> 
         <RenderedPage/>
-        {/* <ModalButton onClick={() => dispatch(changeIsOpen(false))} label="Close" />  */}
       </motion.div>    
     </Backdrop>
   );
@@ -71,7 +71,7 @@ const Modal = () => {
 
 
 
-const ModalButton = ({ onClick, label }:ModalButton) => (
+const ModalButton = ({ onClick }:ModalButton) => (
   <motion.button
     className={styles['modal-button']}
     type="button"
@@ -79,7 +79,6 @@ const ModalButton = ({ onClick, label }:ModalButton) => (
     whileTap={{ scale: 0.95 }}
     onClick={onClick}
   >
-    {label}
   </motion.button>
 );
 
