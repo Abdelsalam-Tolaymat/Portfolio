@@ -1,0 +1,4 @@
+{
+    "intro1": "Hi, I am ", "intro2": "Abdelsalam Tolaymat", "intro3": "  and I develop websites!",
+    "footer1": "To check some of my projects, click on any of the titles above. For more information about me, click ", "footer2": "here.", "footer3": "This website was created in ", "footer4": "TypeScript", "footer5": " using ", "footer6": "React", "footer7": " and ", "footer8": "Next.js", "footer9": ". The animations were done with ", "footer10": "Framer Motion", "footer11": "You can check the source code ", "footer12": "here."
+}
