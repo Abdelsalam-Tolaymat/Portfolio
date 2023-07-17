@@ -1,4 +1,5 @@
 {
     "intro1": "Hi, Ich bin ", "intro2": "Abdelsalam Tolaymat", "intro3": "  und ich entwickle Websites!",
-    "footer1": "To check some of my projects, click on any of the titles above. For more information about me, click ", "footer2": "here.", "footer3": "This website was created in ", "footer4": "TypeScript", "footer5": " using ", "footer6": "React", "footer7": " and ", "footer8": "Next.js", "footer9": ". The animations were done with ", "footer10": "Framer Motion", "footer11": "You can check the source code ", "footer12": "here."
+    "footer1": "Um einige meiner Projekte zu überprüfen, klicken Sie bitte auf einen der oben stehenden Titel. Für weitere Informationen über mich, klicken Sie ", "footer2": "hier.", "footer3": "Diese Website wurde mit ", "footer4": "TypeScript", "footer5": ", ", "footer6": "React", "footer7": " und ", "footer8": "Next.js", "footer8_2": " erstellt.", "footer9": " Die Animationen wurden mit ", "footer10": "Framer Motion", "footer10_2": " realisiert.", "footer11": "Sie können den Quellcode ", "footer12": "hier", "footer12_2": " überprüfen.",
+    "cardPatchMe": "Overwolf-Desktop-App für League of Legends.",  "cardAnimeGetter": "MyAnimeList-Klon-Website, erstellt mit Jikan API.",  "cardCheckMyWeather": "Wettervorhersage-Website, erstellt mit WeatherAPI."
 }

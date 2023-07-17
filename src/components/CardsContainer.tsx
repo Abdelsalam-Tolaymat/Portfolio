@@ -48,9 +48,9 @@ export default function CardsContainer() {
 
                 {modalOpen ? motionDiv :
                 <motion.div layout key={'container'} initial={{ x : '-100vw', opacity: 0 }} animate={{ x : '0vw', opacity: 1}} exit={{ x : '-100vw', opacity: 0 }} transition={{ duration:0.5}} className={styles['cards-container']}>
-                    <Card title="PatchMe" description='Overwolf desktop app for League of Legends' />
-                    <Card title="Anime Getter" description='MyAnimeList clone website created with Jikan API' />
-                    <Card title="CheckMyWeather" description='Weather forecast website created with WeatherAPI' />
+                    <Card title="PatchMe"/>
+                    <Card title="Anime Getter"/>
+                    <Card title="CheckMyWeather"/>
                 </motion.div>
                 }
             </AnimatePresence>
