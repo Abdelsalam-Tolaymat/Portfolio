@@ -5,7 +5,7 @@ import { motion } from 'framer-motion'
 import { MouseEvent, useState } from 'react'
 import { useDispatch } from 'react-redux'
 import { changeEverything } from '@/store/modalSlice'
-import { FormattedMessage} from "react-intl"
+import FormattedText from './FormattedText'
 
 
 interface CardProps {title:string}
@@ -21,10 +21,10 @@ export default function Card({title}:CardProps) {
         }
     }
 
-    const descriptionId = () => {        
+    const descriptionId = ():string => {        
         if(title == 'PatchMe'){return 'cardPatchMe'}
         else if(title == 'Anime Getter'){return 'cardAnimeGetter'}
-        else if(title == 'CheckMyWeather'){return 'cardCheckMyWeather'}
+        else {return 'cardCheckMyWeather'}
     }
 
     
@@ -33,7 +33,7 @@ export default function Card({title}:CardProps) {
         <>
             <motion.div transition={{duration:0.2}} layout data-title={title} data-ishovered={isHovered} onClick={() => dispatch(changeEverything({isOpen:true, modalPageName:title}))} onMouseEnter={handleHover} onMouseLeave={handleHover} className={styles['card']}>
                 <span data-title={title} data-ishovered={isHovered} className={styles['card-title']}>{title}</span>
-                {isHovered ? <span className={styles['description']}><FormattedMessage id={descriptionId()}/></span> : null}
+                {isHovered ? <span className={styles['description']}><FormattedText id={descriptionId()}/></span> : null}
             </motion.div>
         </>
 

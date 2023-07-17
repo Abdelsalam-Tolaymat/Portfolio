@@ -1,5 +1,6 @@
 {
     "intro1": "Hi, I am ", "intro2": "Abdelsalam Tolaymat", "intro3": "  and I develop websites!",
     "footer1": "To check some of my projects, click on any of the titles above. For more information about me, click ", "footer2": "here.", "footer3": "This website was created in ", "footer4": "TypeScript", "footer5": " using ", "footer6": "React", "footer7": " and ", "footer8": "Next.js.", "footer9": " The animations were done with ", "footer10": "Framer Motion.", "footer10_2": "", "footer11": "You can check the source code ", "footer12": "here.", "footer12_2": "",
-    "cardPatchMe": "Overwolf desktop app for League of Legends",  "cardAnimeGetter": "MyAnimeList clone website created with Jikan API",  "cardCheckMyWeather": "Weather forecast website created with WeatherAPI"
+    "cardPatchMe": "Overwolf desktop app for League of Legends",  "cardAnimeGetter": "MyAnimeList clone website created with Jikan API",  "cardCheckMyWeather": "Weather forecast website created with WeatherAPI",
+    "modalPatchMe1": "A desktop app developed and published on the Overwolf platform. PatchMe supports players of the popular online video game 'League of Legends' by providing them with accurate up-to-date information concerning any and all changes in the game. The app was recently released on the Overwolf store and currently boasts over 2k downloads. You can find it through this ", "modalPatchMe2": "link.", "modalPatchMe3": " Click ", "modalPatchMe4": "here", "modalPatchMe5": " for a technical and in-depth look at the app."
 }

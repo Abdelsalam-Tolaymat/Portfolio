@@ -2,9 +2,9 @@
 
 import styles from '../../styles/PatchMeCard.module.css'
 import { useEffect, useState } from 'react'
-import { useDispatch } from 'react-redux'
 import Image from 'next/image'
 import setColors from '@/composables/ThemeSelector'
+import FormattedText from '../FormattedText'
 
 export default function PatchMeCard({}) {
 
@@ -18,7 +18,7 @@ export default function PatchMeCard({}) {
        }
     },[activeGif])
 
-    const descriptionText = ()=> {return <span>A desktop app developed and published on the Overwolf platform. PatchMe supports players of the popular online video game "League of Legends" by providing them with accurate up-to-date information concerning any and all changes in the game. The app was recently released on the Overwolf store and currently boasts over 2k downloads. You can find it through this <a className={styles['reference-link']} href="https://www.overwolf.com/app/BmElectro_and_A3ead-PatchMe">link</a>.<br/><br/> Click <a className={styles['reference-link']} href="https://dev.to/abdelsalam_tolaymat/overview-of-overwolf-app-patchme-21jf">here</a>  for a technical and in-depth look at the app.</span>}
+    const descriptionText = ()=> {return <span><FormattedText id='modalPatchMe1'/><a className={styles['reference-link']} href="https://www.overwolf.com/app/BmElectro_and_A3ead-PatchMe"><FormattedText id='modalPatchMe2'/></a><br/><br/><FormattedText id='modalPatchMe3'/><a className={styles['reference-link']} href="https://dev.to/abdelsalam_tolaymat/overview-of-overwolf-app-patchme-21jf"><FormattedText id='modalPatchMe4'/></a><FormattedText id='modalPatchMe5'/></span>}
 
     return (
         <> 
