@@ -2,9 +2,9 @@
 
 import styles from '../../styles/PatchMeCard.module.css'
 import { useEffect, useState } from 'react'
-import { useDispatch } from 'react-redux'
 import Image from 'next/image'
 import setColors from '@/composables/ThemeSelector'
+import FormattedText from '../FormattedText'
 
 export default function AnimeGetterCard({}) {
 
@@ -13,7 +13,7 @@ export default function AnimeGetterCard({}) {
     },[])
 
 
-    const descriptionText = ()=> {return <span>A <a className={styles['reference-link']} href="http://myanimelist.net/">MyAnimeList</a> clone website that functions as an information database for anime series and movies, their synopsis, and their rating, generated through users of MyAnimeList. Anime Getter also contains lists of the Top Anime sorted based on the user ratings. Users can additionally find information on seasonaly airing anime, as well as a schedule showing which Anime airs on which day of the week.<br/><br/> Anime Getter was developed with Vue.js using information provided by the <a className={styles['reference-link']} href="https://jikan.moe/">Jikan API</a>. However, the development process has been halted midway due to issues concerning a variety of endpoints on the API side. This led to Anime Getter currently being unfinished and semi-broken.<br/><br/> You can take a look at Anime Getter <a className={styles['reference-link']} href="https://anime-getter.vercel.app/">here</a>.</span>}
+    const descriptionText = ()=> {return <span><FormattedText id='modalAG1'/><a className={styles['reference-link']} href="http://myanimelist.net/"><FormattedText id='modalAG2'/></a><FormattedText id='modalAG3'/><br/><br/><FormattedText id='modalAG4'/><a className={styles['reference-link']} href="https://jikan.moe/"><FormattedText id='modalAG5'/></a><FormattedText id='modalAG6'/><br/><br/><FormattedText id='modalAG7'/><a className={styles['reference-link']} href="https://anime-getter.vercel.app/"><FormattedText id='modalAG8'/></a><FormattedText id='modalAG8_2' display='DE'/></span>}
 
     return (
         <> 
@@ -30,7 +30,7 @@ export default function AnimeGetterCard({}) {
             <div className={styles['card-description'] + ' ' + styles['anime-getter-card-description']}>
                 <span className={styles['card-title']} >Anime Getter</span>
                 {descriptionText()}
-                <span>Technologies used: 
+                <span><FormattedText id='modalPatchMe6'/>
                     <ul>
                         <li><a className={styles['reference-link']} href="https://vuejs.org/">Vue.js</a></li>
                         <li><a className={styles['reference-link']} href="https://nodejs.org/en">Node.js</a></li>

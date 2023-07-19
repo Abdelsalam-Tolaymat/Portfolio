@@ -6,6 +6,9 @@
     height: 4rem;
     border-bottom: 1px solid var(--main-website-color);
     gap: 20px;
+    position: relative;
+    transition: border-color 0.3s;
+
 }
 
 .header-element{
@@ -22,4 +25,18 @@
 .header-element-active{
     color: var( --main-website-hover-color);
     text-decoration: underline;
+}
+
+.languages-container{
+    position: absolute;
+    right: 60px;
+}
+
+.active{
+    color: var(--main-website-hover-color);
+    transition: color 0.3s;
+}
+
+.language-select:hover{
+    cursor: pointer;
 }

@@ -23,9 +23,9 @@ export default function Page() {
       <div className={styles['intro-container']}>
                   <Image
                     className= {styles['profile-pic']}
-                    src="/Profile Pic Template.png"
-                    width={673}
-                    height={673}
+                    src="/pfp4.jpg"
+                    width={1770}
+                    height={1770}
                     alt="Picture of Abdelsalam Tolaymat"
                 />
                 <div className= {styles['intro-text']}><FormattedText id='intro1'/><span className= {styles['intro-name']}><FormattedText id='intro2'/></span><FormattedText id='intro3'/></div>

@@ -18,7 +18,7 @@ export default function PatchMeCard({}) {
        }
     },[activeGif])
 
-    const descriptionText = ()=> {return <span><FormattedText id='modalPatchMe1'/><a className={styles['reference-link']} href="https://www.overwolf.com/app/BmElectro_and_A3ead-PatchMe"><FormattedText id='modalPatchMe2'/></a><br/><br/><FormattedText id='modalPatchMe3'/><a className={styles['reference-link']} href="https://dev.to/abdelsalam_tolaymat/overview-of-overwolf-app-patchme-21jf"><FormattedText id='modalPatchMe4'/></a><FormattedText id='modalPatchMe5'/></span>}
+    const descriptionText = ()=> {return <span><FormattedText id='modalPatchMe1'/><a className={styles['reference-link']} href="https://www.overwolf.com/app/BmElectro_and_A3ead-PatchMe"><FormattedText id='modalPatchMe2'/></a><FormattedText id='modalPatchMe2_2' display='DE'/><br/><br/><FormattedText id='modalPatchMe3'/><a className={styles['reference-link']} href="https://dev.to/abdelsalam_tolaymat/overview-of-overwolf-app-patchme-21jf"><FormattedText id='modalPatchMe4'/></a><FormattedText id='modalPatchMe5'/></span>}
 
     return (
         <> 
@@ -44,7 +44,7 @@ export default function PatchMeCard({}) {
             <div className={styles['card-description']}>
                 <span className={styles['card-title']} >PatchMe</span>
                 {descriptionText()}
-                <span>Technologies used: 
+                <span><FormattedText id='modalPatchMe6'/> 
                     <ul>
                         <li><a className={styles['reference-link']} href="https://vuejs.org/">Vue.js</a></li>
                         <li><a className={styles['reference-link']} href="https://nodejs.org/en">Node.js</a></li>

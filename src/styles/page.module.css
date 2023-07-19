@@ -8,7 +8,8 @@
 .profile-pic{
     width: 300px;
     height: 300px;
-
+    border-radius: 50%;
+    border: 3px solid var(--main-website-color);
 }
 
 .intro-text{
@@ -30,6 +31,9 @@
         width: 40%;
         font-size: x-large;
     }
+    .intro-container{
+        margin-bottom: 15px;
+    }
 }
 
 
@@ -38,6 +42,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 25px;
+}
+
+@media  screen and (max-width: 1100px){
+    .footer-container{
+        margin-bottom: 0px;
+
+    }
 }
 
 .footer{
