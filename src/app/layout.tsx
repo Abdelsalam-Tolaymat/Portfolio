@@ -4,7 +4,7 @@ import Providers from '@/components/Provider'
 import IntlGlobalProvider from '@/components/IntlGlobalProvider'
 
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
 
 export const metadata = {
   title: 'Portfolio',

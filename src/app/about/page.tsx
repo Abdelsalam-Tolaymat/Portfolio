@@ -31,6 +31,12 @@ export default function Page() {
           <span className={styles['skill']}>GIT</span>
           <span className={styles['skill']}>SQL Basics</span>
           <span className={styles['skill']}>MATLAB</span>
+          <span className={styles['skill']}>Visual Studio Code</span>
+          <span className={styles['skill']}>NPM</span>
+          <span className={styles['skill']}>Vite</span>
+          <span className={styles['skill']}>MS Office</span>
+
+
 
         </div>
 

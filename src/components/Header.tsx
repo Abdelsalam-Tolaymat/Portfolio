@@ -13,6 +13,7 @@ export default function Header() {
 
     const pathname = usePathname()
     const isAbout = pathname.includes('about')
+    const isContact = pathname.includes('contact')
     const useAppDispatch: () => AppDispatch = useDispatch
     const dispatch = useAppDispatch()
     const usersLocale = useSelector((state:RootState)=>state.language.language.usersLocale)
@@ -30,8 +31,9 @@ export default function Header() {
     return (
         <>
                 <nav className={styles['header']}>
-                    <Link className={`${styles['header-element']}  ${!isAbout ? styles['header-element-active']: ''}`} href="/">Portfolio</Link>
+                    <Link className={`${styles['header-element']}  ${!isAbout && !isContact ? styles['header-element-active']: ''}`} href="/">Portfolio</Link>
                     <Link className={`${styles['header-element']}  ${isAbout ? styles['header-element-active']: ''}`} href="/about">About</Link>
+                    <Link className={`${styles['header-element']}  ${isContact ? styles['header-element-active']: ''}`} href="/contact">Contact</Link>
                     <div className={styles['languages-container']}><span  className={styles['language-select'] + ' ' + setActiveTab('EN')} onClick={()=>{dispatch(fetchLanguageText('EN'))}}>EN</span>|<span className={styles['language-select'] + ' ' + setActiveTab('DE')} onClick={()=>{dispatch(fetchLanguageText('DE'))}}>DE</span></div>
                 </nav>
         </>
